@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 const url = 'mongodb+srv://Admin:IAI123@tihefdb.bra2g.mongodb.net/?retryWrites=true&w=majority';
 
 const app = express();
