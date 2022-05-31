@@ -7,7 +7,7 @@ const router = express.Router();
 const Food = require('../Models/food');
 
 
-router.get('/', async (req, res) => {
+router.get('/tifDb/fooditem', async (req, res) => {
     try {
         const foodList = await Food.find({});
         res.send(foodList);

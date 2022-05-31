@@ -7,7 +7,7 @@ const router = express.Router();
 const Customer = require('../Models/customer');
 
 
-router.get('/', async (req, res) => {
+router.get('/tifDb/customer', async (req, res) => {
     try {
         const customerList = await Customer.find({});
         res.send(customerList);
@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
 })
 
 
-router.post('/register', async(req,res) => {
+router.post('/tifDb/customer', async(req,res) => {
     const tempUser = req.body
 
     if (await Customer.findOne({ email: tempUser.email }) != null) {
@@ -45,7 +45,7 @@ router.post('/register', async(req,res) => {
     }
 })
 
-router.post('/login', async (req, res) => {
+router.post('/tifDb/customer', async (req, res) => {
     try {
         const tempUser = req.body;
         const oldCustomer = await Customer.findOne({ username: tempUser.username });
@@ -60,7 +60,7 @@ router.post('/login', async (req, res) => {
 })
 
 
-router.delete('/delete', async(req, res) => {
+router.delete('/tifDb/customer', async(req, res) => {
     try {
         const tempUser = req.body;
         await Customer.deleteOne({ _id: tempUser._id });
