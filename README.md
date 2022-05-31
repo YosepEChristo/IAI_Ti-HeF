@@ -22,7 +22,7 @@ Bagian Back end dibikin di folder server
 
 kirim username, password dan email lewat body
 
-> (POST)localhost:8080/customer/
+> (POST)localhost:8080/customer/register
 
 ### Login
 
