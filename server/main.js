@@ -6,8 +6,22 @@ const url = 'mongodb+srv://Admin:IAI123@tihefdb.bra2g.mongodb.net/?retryWrites=t
 const app = express();
 app.use(express.json());
 
+app.use(bodyParser.json());
+app.use(bodyParser.text());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json({ type: 'application/json' }))
 
-const PORT = 8000;
+mongoose.connect(url, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+
+mongoose.connection.on('open', () => {
+    console.log('Connected to DataBase');
+})
+
+
+const PORT = 8080;
 
 
 const userRoutes = require('./Routes/customers');

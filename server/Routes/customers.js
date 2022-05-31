@@ -22,17 +22,13 @@ router.post('/register', async(req,res) => {
     const tempUsername = req.body.username;
     const tempPassword = req.body.password;
 
-     await Customer.countDocuments({ email: tempEmail }, (err, count)=> {
-        if (count != 0 || tempEmail == "") {
-            console.log("Email tidak sesuai");
-        }
-     });
+    if (await Customer.findOne({ email: tempEmail }) != null) {
+        res.send("email sudah terdaftar");
+    };
 
-    await Customer.countDocuments({ username: tempUsername }, (err, count) => {
-        if (count != 0 || tempUsername == "") {
-            console.log("username tidak sesuai");
-        }
-    });
+    if (await Customer.findOne({ username: tempUsername }) != null) {
+        res.send("username sudah digunakan");
+    };
 
     if (tempPassword == "") {
         res.send("password tidak sesuai");
@@ -56,10 +52,11 @@ router.post('/login', async (req, res) => {
         const username = req.body.username;
         const password = req.body.password;
         const oldCustomer = await Customer.findOne({ username });
-        if (oldCustomer.password == password) {
+        if (oldCustomer != null && oldCustomer.password == password) {
             res.send(oldCustomer);
+        } else {
+            res.send("login gagal");
         }
-        res.send("login gagal");
     } catch (e) {
         res.send("error : " + e);
     }
@@ -70,7 +67,7 @@ router.delete('/delete', async(req, res) => {
     try {
         const tempUsername = req.body.username;
         await Customer.deleteOne({ username: tempUsername });
-        res.send(tempUsername + "sudah dihapus");
+        res.send(tempUsername + " sudah dihapus");
     } catch (e) {
         res.send("error : " + e);
     }
