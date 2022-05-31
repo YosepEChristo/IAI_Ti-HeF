@@ -17,7 +17,7 @@ router.get('/tifDb/fooditem', async (req, res) => {
 })
 
 
-router.post('/add', async (req, res) => {
+router.post('/tifDb/fooditem', async (req, res) => {
     try {
         const tempFood = req.body;
 
@@ -39,7 +39,7 @@ router.post('/add', async (req, res) => {
     }
 })
 
-router.patch('/update', async (req, res) => {
+router.patch('/tifDb/fooditem', async (req, res) => {
     try {
         const tempFood = req.body;
         const oldFood = await Food.findOne({ _id: tempFood._id });
@@ -52,7 +52,7 @@ router.patch('/update', async (req, res) => {
 })
 
 
-router.delete('/delete', async (req, res) => {
+router.delete('/tifDb/fooditem', async (req, res) => {
     try {
         const tempFoodID = req.body._id;
         await Food.deleteOne({ _id: tempFoodID });
