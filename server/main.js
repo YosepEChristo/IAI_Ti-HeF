@@ -1,7 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const cors = require('cors');
 const url = 'mongodb+srv://Admin:IAI123@tihefdb.bra2g.mongodb.net/?retryWrites=true&w=majority';
 
 const app = express();
@@ -22,7 +21,7 @@ mongoose.connection.on('open', () => {
 })
 
 
-const PORT = 8080;
+
 
 
 const userRoutes = require('./Routes/customers');
@@ -35,6 +34,6 @@ app.use('/order', orderRoutes);
 
 
 
-app.listen(PORT, () => {
-    console.log("API running on port : " + PORT);
-})
+app.listen(process.env.PORT || 8080, () =>{
+    console.log("API succesfull connect to db")
+});
