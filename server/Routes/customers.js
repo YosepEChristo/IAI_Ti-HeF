@@ -16,7 +16,8 @@ router.get('/', async (req, res) => {
     }
 })
 
-router.post('/', async(req,res) => {
+
+router.post('/register', async (req, res) => {
     try {
         const tempUser = req.body
 
@@ -34,6 +35,7 @@ router.post('/', async(req,res) => {
                 username: tempUser.username,
                 password: tempUser.password
             })
+
             await newCustomer.save();
             res.send(newCustomer);
         }
@@ -42,7 +44,7 @@ router.post('/', async(req,res) => {
     }
 })
 
-router.post('/', async (req, res) => {
+router.post('/login', async (req, res) => {
     try {
         const tempUser = req.body;
         const oldCustomer = await Customer.findOne({ username: tempUser.username });

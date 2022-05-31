@@ -22,7 +22,7 @@ Bagian Back end dibikin di folder server
 
 kirim username, password dan email lewat body
 
-> (POST)localhost:8080/customer/register
+> (POST)localhost:8080/customer/
 
 ### Login
 
@@ -46,16 +46,44 @@ kirim _id lewat body
 
 Kirim name, image(url), price dan status lewat body
 
->(POST)localhost:8080/food/add
+>(POST)localhost:8080/food/
 
 ### Mengupdate Makanan
 
 Kirim _id dan bagian yg mau diupdate(name/image/price/status) lewat body
 
->(PATCH)localhost:8080/food/update
+>(PATCH)localhost:8080/food/
 
 ### Menghapus makanan
 
 Kirim _id lewat body
 
->(DELETE)localhost:8080/food/delete
+>(DELETE)localhost:8080/food/
+
+## Order API
+
+### List Order
+
+>(GET)localhost:8080/order
+
+## Menerima detail 1 order
+
+>(GET)localhost:8080/order/:id
+
+## Menambahkan Order
+
+Kirim customerID, orderDate, foodList(id makanan), totalPrice, dan delivired lewat body
+
+>(POST)localhost:8080/order/
+
+##Mengupdate Order
+
+Kirim _id, field yang diupdate lewat body
+
+>(PATCH)localhost:8080/order
+
+## Menghapus Order
+
+Kirim _id lewat body
+
+>(DELETE)localhost:8080/order
