@@ -18,26 +18,24 @@ router.get('/', async (req, res) => {
 
 
 router.post('/register', async(req,res) => {
-    const tempEmail = req.body.email;
-    const tempUsername = req.body.username;
-    const tempPassword = req.body.password;
+    const tempUser = req.body
 
-    if (await Customer.findOne({ email: tempEmail }) != null) {
+    if (await Customer.findOne({ email: tempUser.email }) != null) {
         res.send("email sudah terdaftar");
     };
 
-    if (await Customer.findOne({ username: tempUsername }) != null) {
+    if (await Customer.findOne({ username: tempUser.username }) != null) {
         res.send("username sudah digunakan");
     };
 
-    if (tempPassword == "") {
+    if (tempUser.password == "") {
         res.send("password tidak sesuai");
     }
 
     const newCustomer = new Customer({
-        email: tempEmail,
-        username: tempUsername,
-        password: tempPassword
+        email: tempUser.email,
+        username: tempUser.username,
+        password: tempUser.password
     })
     try {
         await newCustomer.save();
@@ -49,10 +47,9 @@ router.post('/register', async(req,res) => {
 
 router.post('/login', async (req, res) => {
     try {
-        const username = req.body.username;
-        const password = req.body.password;
-        const oldCustomer = await Customer.findOne({ username });
-        if (oldCustomer != null && oldCustomer.password == password) {
+        const tempUser = req.body;
+        const oldCustomer = await Customer.findOne({ username: tempUser.username });
+        if (oldCustomer != null && oldCustomer.password == tempUser.password) {
             res.send(oldCustomer);
         } else {
             res.send("login gagal");
@@ -65,9 +62,9 @@ router.post('/login', async (req, res) => {
 
 router.delete('/delete', async(req, res) => {
     try {
-        const tempUsername = req.body.username;
-        await Customer.deleteOne({ username: tempUsername });
-        res.send(tempUsername + " sudah dihapus");
+        const tempUser = req.body;
+        await Customer.deleteOne({ _id: tempUser._id });
+        res.send(tempUser.username + " sudah dihapus");
     } catch (e) {
         res.send("error : " + e);
     }
