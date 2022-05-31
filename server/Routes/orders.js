@@ -21,7 +21,7 @@ router.get('/:id', async (req, res) => {
     }
 })
 
-router.post('/add', async (req, res) => {
+router.post('/', async (req, res) => {
     try {
         const tempOrder = req.body;
         if (await Customer.findById({ _id: tempOrder.customerID }) != null) {
@@ -42,7 +42,7 @@ router.post('/add', async (req, res) => {
     }
 })
 
-router.patch('/update', async (req, res) => {
+router.patch('/', async (req, res) => {
     try {
         const tempOrder = req.body;
         const oldOrder = await Order.findById({ _id: tempOrder._id });
@@ -58,7 +58,7 @@ router.patch('/update', async (req, res) => {
     }
 })
 
-router.delete('/delete', async (req, res) => {
+router.delete('/', async (req, res) => {
     try {
         const tempOrderID = req.body._id;
         await Order.deleteOne({ _id: tempOrderID });
