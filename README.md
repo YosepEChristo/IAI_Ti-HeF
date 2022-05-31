@@ -34,7 +34,7 @@ kirim username dan password lewat body
 
 kirim _id lewat body
 
->(DELETE)localhost:8080/customer/delete
+>(DELETE)localhost:8080/customer/
 
 ## Food API
 
