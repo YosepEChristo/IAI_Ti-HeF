@@ -26,7 +26,9 @@ const PORT = 8080;
 
 
 const userRoutes = require('./Routes/customers');
+const foodRoutes = require('./Routes/foods')
 app.use('/customer', userRoutes);
+app.use('/food', foodRoutes);
 
 
 

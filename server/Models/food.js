@@ -3,19 +3,21 @@ const mongoose = require('mongoose');
 const foodSchema = new mongoose.Schema({
 	name: {
 		type: String,
-		required: true
+		required: true,
+		unique: true
 	},
 	image: {
-		type: string,
+		type: String,
 		required: true
     },
 	price: {
 		type: Number,
-		required: true,
+		required: true
 	},
 	status: {
 		type: Boolean,
 		required: true,
+		default: true
 	}
 })
 
