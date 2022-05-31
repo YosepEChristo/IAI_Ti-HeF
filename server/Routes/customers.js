@@ -17,29 +17,27 @@ router.get('/', async (req, res) => {
 })
 
 
-router.post('/register', async(req,res) => {
-    const tempUser = req.body
-
-    if (await Customer.findOne({ email: tempUser.email }) != null) {
-        res.send("email sudah terdaftar");
-    };
-
-    if (await Customer.findOne({ username: tempUser.username }) != null) {
-        res.send("username sudah digunakan");
-    };
-
-    if (tempUser.password == "") {
-        res.send("password tidak sesuai");
-    }
-
-    const newCustomer = new Customer({
-        email: tempUser.email,
-        username: tempUser.username,
-        password: tempUser.password
-    })
+router.post('/register', async (req, res) => {
     try {
-        await newCustomer.save();
-        res.send(newCustomer);
+        const tempUser = req.body
+
+        if (await Customer.findOne({ email: tempUser.email }) != null) {
+            res.send("email sudah terdaftar");
+        } else if
+            (await Customer.findOne({ username: tempUser.username }) != null) {
+            res.send("username sudah digunakan");
+        } else if
+            (tempUser.password == "") {
+            res.send("password tidak sesuai");
+        } else {
+            const newCustomer = new Customer({
+                email: tempUser.email,
+                username: tempUser.username,
+                password: tempUser.password
+            })
+            await newCustomer.save();
+            res.send(newCustomer);
+        }
     } catch (e) {
         res.send("error : " + e);
     }

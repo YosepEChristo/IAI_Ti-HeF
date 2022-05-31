@@ -26,15 +26,12 @@ const PORT = 8080;
 
 
 const userRoutes = require('./Routes/customers');
-const foodRoutes = require('./Routes/foods')
+const foodRoutes = require('./Routes/foods');
+const orderRoutes = require('./Routes/orders');
+
 app.use('/customer', userRoutes);
 app.use('/food', foodRoutes);
-
-
-
-
-
-
+app.use('/order', orderRoutes);
 
 
 
