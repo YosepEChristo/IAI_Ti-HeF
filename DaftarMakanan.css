@@ -82,6 +82,8 @@
     line-height: var(--inter-10-bold-line-height);
   }
 .buttonbmi {
+    border-radius:5px;
+    box-shadow:2px 2px 4px;
     background-color: var(--transparent-sandy-brown);
     padding: 14.95px 12.1px 30.58px 50px;
     display: flex;
