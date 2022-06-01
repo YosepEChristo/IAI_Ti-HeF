@@ -1,0 +1,163 @@
+.popularItemsTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .num130Cal {
+    height: 1.26%;
+    width: 46.62%;
+    color: $grey-line;
+    display: flex;
+    margin-bottom: 439px;
+    margin-left: 532px;
+    letter-spacing: 0.3px;
+    @include inter-24-regular;
+  }
+  .popularItems {
+    height: 4.91%;
+    width: 46.62%;
+    color: $primeraly-black;
+    display: flex;
+    margin-bottom: 10px;
+    letter-spacing: 0.2px;
+    @include inter-44-bold;
+  }
+  .mostOrderedItems {
+    height: 1.26%;
+    width: 46.62%;
+    color: $grey-line;
+    display: flex;
+    margin-bottom: 51px;
+    letter-spacing: 0.3px;
+    @include inter-16-regular;
+  }
+  .flexWrapperTen {
+    display: flex;
+    align-items: flex-start;
+    &:not(:last-of-type) {
+      margin-bottom: 29.81px;
+    }
+  }
+  .item1 {
+    margin-right: 33.95px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .gadoGado1 {
+    height: 77.21%;
+    align-self: stretch;
+    margin-bottom: 0.01px;
+    object-fit: cover;
+  }
+  .flexWrapperNine {
+    background-color: $white;
+    padding: 22.44px 134.63px 16.83px 33.95px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .gadoGado {
+    color: $dark-slate-gray-2;
+    flex: 1;
+    align-self: stretch;
+    display: flex;
+    opacity: 0.87;
+    @include inter-21-bold;
+  }
+  .item2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:not(:last-of-type) {
+      margin-right: 33.63px;
+    }
+  }
+  .tinutuan {
+    width: 99.75%;
+    height: 77.21%;
+    margin-bottom: 0.01px;
+  }
+  .flexWrapperEight {
+    background-color: $white;
+    padding: 22.44px 135.68px 16.83px 33.96px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .sayurAsem {
+    width: 99.93%;
+    height: 77.21%;
+    margin-bottom: 0.01px;
+  }
+  .flexWrapperSeven {
+    background-color: $white;
+    padding: 22.44px 134.62px 16.83px 33.96px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .flexWrapperEleven {
+    margin-bottom: 30.71px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .sayurBayam {
+    height: 77.18%;
+    align-self: stretch;
+    margin-bottom: 0.11px;
+    object-fit: cover;
+  }
+  .karedok {
+    width: 99.75%;
+    height: 77.18%;
+    margin-bottom: 0.11px;
+  }
+  .supIkan {
+    width: 99.93%;
+    height: 77.18%;
+    margin-bottom: 0.11px;
+  }
+  .item7 {
+    margin-right: 33.95px;
+    padding: 0 0 74.01px;
+    position: relative;
+  }
+  .flexWrapperThree {
+    background-color: $white;
+    padding: 22.44px 134.63px 16.83px 33.95px;
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    left: 0;
+    top: 252.59px;
+  }
+  .pepes {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .item8 {
+    margin-right: 33.63px;
+    padding: 0 0.69px 74.01px 0.37px;
+    position: relative;
+  }
+  .flexWrapperTwo {
+    background-color: $white;
+    padding: 22.44px 135.68px 16.83px 33.96px;
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    left: 0;
+    top: 252.59px;
+  }
+  .item9 {
+    padding: 0 0.32px 74.01px 0;
+    position: relative;
+  }
+  .flexWrapperOne {
+    background-color: $white;
+    padding: 22.44px 134.62px 16.83px 33.96px;
+    display: flex;
+    align-items: flex-start;
+    position: absolute;
+    left: 0.32px;
+    top: 252.59px;
+  }
