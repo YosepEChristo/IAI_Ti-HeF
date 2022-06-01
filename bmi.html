@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UIF-8">
+  <meta http-equiv="X-UA-COmpatible" content="IE=edge">
+  <meta name="viewport" content="" width-device-width, initial-scale="1.0">
+  <title>Healthy-Calc</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="def">
+    <span class="bmi">BMI ranges are based on the effect of excessive body fat on disease and mortality and are moderately related to adiposity. BMI was developed as an indicator of disease riskas BMI increases, so does the risk for some diseases. Some of the common conditions associated with being overweight and obese include: premature death, cardiovascular disease,high blood pressure, osteoarthritis, some cancers, and diabetes.</span>
+    <span class="bmr">Basal metabolic rate is the energy expended by an individual at rest (when fasted and at thermoneutral temperature), as a result of normal cell and organ function within the body, and accounts for approximately 60-75% of total daily energy expenditure in individuals with a sedentary occupation.</span>
+    <span class="ket">This calculator is not a medical diagnosis tool or a substitute for consulting a specialist/nutritionist. This tool is only for screening that you can do independently, before going to the doctor. After seeing these results or reading other articles on Hello Sehat, you should still consult a doctor to know more about your current health condition.The results of this BMI calculator cannot be used if you have an eating disorder.</span>
+    <span class="bmi-ket">The Importance of Body Mass Index</span>
+    <span class="calc">Healthy-Calc</span>
+    <span class="bmr-ket">What is Basal Metabolic Rate?</span>
+    <span class="ket1">Important information</span>
+    <div class="gambar">
+        <img src="./bmi.svg">
+    </div>
+        </div>
+  </div>
+  <div class="container">
+    <div class="box">
+      <h1>BMI & BMR Calculator</h1>
+      <div class="content">
+        <div class="input">
+            <label for="gender">Gender(female/male)</label>
+            <input type="char" id="gender">
+        </div>
+        <div class="input">
+            <label for="age">Age(year)</label>
+            <input type="number" id="age">
+        </div>
+        <div class="input">
+          <label for="height">Height(cm)</label>
+          <input type="number" id="height">
+        </div>
+        <div class="input">
+          <label for="weight">Weight(kg)</label>
+          <input type="number" id="weight">
+        </div>
+        <button id="calculate">Calculate BMI</button>
+        <button id="calculate2">Calculate BMR</button>
+      </div>
+      <div class="result">
+        <p>Your BMI is :</p>
+        <div id="result">00.00</div>
+        <p class="comment"></p>
+      </div>
+      <div class="result2">
+        <p>Your BMR is :</p>
+        <div id="result2">00.00</div>
+        <p class="comment2"></p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
