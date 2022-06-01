@@ -1,0 +1,422 @@
+.frame-1 {
+    background-color: var(--linen);
+    overflow: hidden;
+    padding: 31px 305.84px 97px 149px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+  .flex-wrapper-six {
+    margin-bottom: 112px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .chef-hat-2-1 {
+    width: 26.14%;
+    height: 88.89%;
+    margin-right: 13px;
+  }
+  .ti-hef {
+    width: 65.36%;
+    color: var(--dark-slate-gray);
+    align-self: stretch;
+    font-family: var(--inter-32-semi-bold-family);
+    font-size: var(--inter-32-semi-bold-size);
+    font-weight: var(--inter-32-semi-bold-weight);
+    line-height: var(--inter-32-semi-bold-line-height);
+  }
+  .flex-wrapper-seven {
+    margin-bottom: 202px;
+    padding: 0 0 0 49px;
+    display: flex;
+    align-items: center;
+  }
+  .tihefdesc {
+    height: 132px;
+    width: 692px;
+    display: flex;
+    margin-right: 274px;
+    font-family: "Inter";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--dark-slate-gray);
+  }
+  .tihefdesc-emphasis-0 {
+    color: var(--dark-slate-gray);
+    font-family: var(--inter-40-bold-family);
+    font-size: var(--inter-40-bold-size);
+    font-weight: var(--inter-40-bold-weight);
+    line-height: var(--inter-40-bold-line-height);
+  }
+  .buttonbmi {
+    background-color: var(--transparent-sandy-brown);
+    padding: 25px 49px 0 50px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .bmi-calculator {
+    height: 53px;
+    width: 230px;
+    font-family: "Inter";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--dark-slate-gray);
+    display: flex;
+  }
+  .menu {
+    margin-bottom: 210.46px;
+    margin-left: 49px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .flex-wrapper-eight {
+    margin-bottom: 49px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .item-1 {
+    margin-right: 39.87px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .fooditemg-1 {
+    width: 390px;
+    height: 210px;
+  }
+  .flex-wrapper-five {
+    background-color: var(--transparent-sandy-brown);
+    padding: 14px 17px 4.61px 37px;
+    box-shadow: 0 4px 4px 0 var(--transparent-black);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .flex-wrapper-twelve {
+    margin-bottom: 9px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .fooditemn-1 {
+    height: 29.39px;
+    width: 236.79px;
+    font-family: "Inter";
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--dark-slate-gray);
+    display: flex;
+    margin-right: 29.21px;
+    opacity: 0.87;
+  }
+  .food-add1 {
+    width: calc(20.83% - 57px);
+    height: calc(72.73% - 27px);
+    background: linear-gradient(
+      215deg,
+      var(--magenta) 17%,
+      var(--orange-red) 83%
+    );
+    margin-top: 15px;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 13.5px 28.5px;
+    display: flex;
+    align-items: center;
+  }
+  .union {
+    width: 13px;
+    height: 13px;
+  }
+  .relative-wrapper-five {
+    position: relative;
+  }
+  .fooditemk-1 {
+    height: 29.39px;
+    width: 236.79px;
+    font-family: "Inter";
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--dark-slate-gray);
+    display: flex;
+    opacity: 0.87;
+    position: relative;
+  }
+  .fooditemh-1 {
+    height: 29.39px;
+    width: 236.79px;
+    font-family: "Inter";
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--dark-slate-gray);
+    display: flex;
+    opacity: 0.87;
+    position: absolute;
+    left: 0;
+    top: -29px;
+  }
+  .item-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .item-2:not(:last-of-type) {
+    margin-right: 43px;
+  }
+  .fooditemg-2 {
+    width: 389.68px;
+    height: 209.58px;
+    margin-bottom: 0.42px;
+  }
+  .flex-wrapper-four {
+    background-color: var(--transparent-sandy-brown);
+    padding: 18.15px 26px 33.61px 30.33px;
+    box-shadow: 0 4px 4px 0 var(--transparent-black);
+    display: flex;
+    align-items: flex-start;
+  }
+  .flex-wrapper-eleven {
+    margin-right: 20.21px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .fooditemn-2 {
+    height: 29.39px;
+    width: 236.79px;
+    font-family: "Inter";
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--dark-slate-gray);
+    display: flex;
+    margin-bottom: 1.46px;
+    opacity: 0.87;
+  }
+  .relative-wrapper-four {
+    margin-left: 6.67px;
+    position: relative;
+  }
+  .fooditemk-2 {
+    height: 29.39px;
+    width: 236.79px;
+    font-family: "Inter";
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--dark-slate-gray);
+    display: flex;
+    opacity: 0.87;
+    position: absolute;
+    left: 0;
+    bottom: -29px;
+  }
+  .food-add2 {
+    width: calc(20.98% - 57px);
+    height: calc(66.4% - 27px);
+    background: linear-gradient(
+      215deg,
+      var(--magenta) 17%,
+      var(--orange-red) 83%
+    );
+    margin-top: 10.85px;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 13.5px 28.5px;
+    display: flex;
+    align-items: center;
+  }
+  .flex-wrapper-three {
+    background-color: var(--transparent-sandy-brown);
+    padding: 18.15px 26.12px 4.61px 31px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .flex-wrapper-ten {
+    margin-bottom: 14px;
+    padding: 0 0 0 0.12px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .fooditemn-3 {
+    height: 29.39px;
+    width: 236.79px;
+    font-family: "Inter";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--dark-slate-gray);
+    display: flex;
+    margin-right: 26.09px;
+    opacity: 0.87;
+  }
+  .food-add3 {
+    width: calc(21.04% - 57px);
+    height: calc(87.24% - 27px);
+    background: linear-gradient(
+      215deg,
+      var(--magenta) 17%,
+      var(--orange-red) 83%
+    );
+    margin-top: 5.85px;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 11px 26px 16px 31px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .flex-wrapper-nine {
+    padding: 0 0 0 224px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .item-4 {
+    margin-right: 42px;
+    padding: 0 0.32px 112.96px 0;
+    position: relative;
+  }
+  .fooditemg-4 {
+    width: 389.68px;
+    height: 209.58px;
+    position: relative;
+  }
+  .flex-wrapper-two {
+    background-color: var(--transparent-sandy-brown);
+    padding: 18.69px 17px 6.15px 30.79px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 0;
+    top: 209.54px;
+  }
+  .flex-wrapper-fourteen {
+    margin-bottom: 6.46px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .fooditemn-4 {
+    height: 29.39px;
+    width: 236.79px;
+    font-family: "Inter";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--dark-slate-gray);
+    display: flex;
+    margin-right: 35.42px;
+    opacity: 0.87;
+  }
+  .food-add4 {
+    width: calc(20.46% - 57px);
+    height: calc(76.47% - 27px);
+    background: linear-gradient(
+      215deg,
+      var(--magenta) 17%,
+      var(--orange-red) 83%
+    );
+    margin-top: 12.31px;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 13.5px 28.5px;
+    display: flex;
+    align-items: center;
+  }
+  .relative-wrapper-two {
+    margin-left: 0.21px;
+    position: relative;
+  }
+  .fooditemh-4 {
+    height: 29.39px;
+    width: 236.79px;
+    font-family: "Inter";
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--dark-slate-gray);
+    display: flex;
+    opacity: 0.87;
+    position: absolute;
+    left: 0;
+    top: -26px;
+  }
+  .item-5 {
+    padding: 0 0.45px 112.96px 0;
+    position: relative;
+  }
+  .flex-wrapper-one {
+    background-color: var(--transparent-sandy-brown);
+    padding: 18.69px 26.46px 6.15px 29.87px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 0.13px;
+    top: 209.54px;
+  }
+  .flex-wrapper-thirteen {
+    margin-bottom: 6.46px;
+    padding: 0 0 0 0.46px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .fooditemn-5 {
+    height: 29.39px;
+    width: 236.79px;
+    font-family: "Inter";
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--dark-slate-gray);
+    display: flex;
+    margin-right: 26.88px;
+    opacity: 0.87;
+  }
+  .upload {
+    width: calc(21.01% - 57px);
+    height: calc(76.47% - 27px);
+    background: linear-gradient(
+      215deg,
+      var(--magenta) 17%,
+      var(--orange-red) 83%
+    );
+    margin-top: 12.31px;
+    overflow: hidden;
+    border-radius: 20px;
+    padding: 13.5px 28.5px;
+    display: flex;
+    align-items: center;
+  }
+  .fooditemh-5 {
+    height: 29.39px;
+    width: 236.79px;
+    font-family: "Inter";
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--dark-slate-gray);
+    display: flex;
+    opacity: 0.87;
+    position: absolute;
+    left: -1px;
+    top: -26px;
+  }
+  .keranjang {
+    width: 10.56%;
+    height: 7.31%;
+    margin-left: 1229px;
+  }
+  .line-1 {
+    width: 1829.47px;
+    height: 10.15px;
+    position: absolute;
+    left: -2.5px;
+    top: 87.85px;
+  }
