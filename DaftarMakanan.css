@@ -1,8 +1,32 @@
 :root {
     --dark-slate-gray: #243054;
     --linen: #F4ECE1;
-    --transparent-sandy-brown: #FEBB41
-} 
+    --transparent-sandy-brown: #FEBB41;
+    --inter-32-semi-bold-family: "inter";
+    --inter-32-semi-bold-size: 32px;
+    --inter-32-semi-bold-weight: 600;
+    --inter-32-semi-bold-line-height: 139.8%;
+    --inter-7-bold-family: "inter";
+    --inter-7-bold-size: 7px;
+    --inter-7-bold-weight: bold;
+    --inter-7-bold-line-height: 1;
+    --inter-10-bold-family: "inter";
+    --inter-10-bold-size: 10;
+    --inter-10-bold-weight: bold;
+    --inter-10-bold-line-height: 1;
+    --magenta: #FF00FF;
+    --orange-red: #FF5349;
+}
+
+.ti-desc {
+    margin-right: 300px;
+    width:500px;
+    font-family: var(--inter-7-bold-family);
+    font-size: 20px;
+    font-weight: var(--inter-7-bold-weight);
+    line-height: var(--inter-7-bold-line-height);
+}
+
 .frame-1 {
     background-color: var(--linen);
     overflow: hidden;
@@ -13,7 +37,6 @@
     position: relative;
   }
   .flex-wrapper-six {
-    margin-bottom: 64px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,15 +57,15 @@
     font-weight: var(--inter-32-semi-bold-weight);
     line-height: var(--inter-32-semi-bold-line-height);
   }
-  .flex-wrapper-seven {
+.flex-wrapper-seven {
     margin-bottom: 48px;
-    padding: 0 0 0 22px;
+    padding: 50px 0 0 22px;
     display: flex;
     align-items: center;
-  }
+}
   .ti-hef-desc {
     height: 68px;
-    width: calc(100% - 435px);
+    width: calc(100% - 100px);
     display: flex;
     margin-right: 352px;
     color: rgba(0, 0, 0, 1);
@@ -58,19 +81,19 @@
     font-weight: var(--inter-10-bold-weight);
     line-height: var(--inter-10-bold-line-height);
   }
-  .buttonbmi {
+.buttonbmi {
     background-color: var(--transparent-sandy-brown);
-    padding: 14.95px 12.1px 30.58px 16.56px;
+    padding: 14.95px 12.1px 30.58px 50px;
     display: flex;
     align-items: flex-start;
-  }
+}
   .bmi-calculator {
     height: 7.47px;
-    width: 76.34px;
+    width: 200px;
     color: var(--dark-slate-gray);
     display: flex;
     font-family: var(--inter-10-bold-family);
-    font-size: var(--inter-10-bold-size);
+    font-size: 25px;
     font-weight: var(--inter-10-bold-weight);
     line-height: var(--inter-10-bold-line-height);
   }
@@ -93,13 +116,14 @@
     align-items: flex-start;
   }
   .fooditemg-1 {
-    height: 116.58px;
+    height: 200px;
     align-self: stretch;
     object-fit: cover;
   }
   .flex-wrapper-five {
+    width:306px;
     background-color: var(--transparent-sandy-brown);
-    padding: 7.42px 16.97px 23.55px 19px;
+    padding: 0px 16.97px 23.55px 19px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     display: flex;
     align-items: flex-start;
@@ -117,21 +141,22 @@
     opacity: 0.87;
     position: absolute;
     left: 0;
-    bottom: -8px;
+    bottom: -15px;
     font-family: var(--inter-7-bold-family);
-    font-size: var(--inter-7-bold-size);
+    font-size: 15px;
     font-weight: var(--inter-7-bold-weight);
     line-height: var(--inter-7-bold-line-height);
   }
   .fooditemn-1 {
     height: 26px;
     width: 100%;
+    padding-bottom:10px;
     color: var(--dark-slate-gray);
     display: flex;
     opacity: 0.87;
     position: relative;
     font-family: var(--inter-10-bold-family);
-    font-size: var(--inter-10-bold-size);
+    font-size: 25px;
     font-weight: var(--inter-10-bold-weight);
     line-height: var(--inter-10-bold-line-height);
   }
@@ -145,7 +170,7 @@
     right: -0.33px;
     bottom: -6.31px;
     font-family: var(--inter-7-bold-family);
-    font-size: var(--inter-7-bold-size);
+    font-size:15px;
     font-weight: var(--inter-7-bold-weight);
     line-height: var(--inter-7-bold-line-height);
   }
@@ -171,7 +196,7 @@
     width: 13px;
     height: 13px;
     position: absolute;
-    left: 11.5px;
+    left: 23px;
     top: 4.5px;
   }
   .item-2 {
@@ -486,7 +511,7 @@
     margin-left: 762px;
   }
   .line-1 {
-    width: 1932.63px;
+    max-width: 200%;
     height: 10.15px;
     position: absolute;
     right: -856.47px;
